@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "quinones-claude-plugins",
+  "description": "Jacob Quinones — Claude plugins. Local-first, MCP-driven tools for product workflows.",
+  "owner": {
+    "name": "Jacob Quinones",
+    "url": "https://github.com/QuinonesJacob"
+  },
+  "plugins": [
+    {
+      "name": "resume-studio",
+      "description": "Tailor resumes against JDs, manage applications on a kanban, export to DOCX/PDF — driven through Claude via stdio MCP.",
+      "version": "0.1.0",
+      "homepage": "https://github.com/QuinonesJacob/resume-studio",
+      "keywords": ["resume", "job-application", "mcp", "skills", "kanban"],
+      "source": {
+        "source": "github",
+        "repo": "QuinonesJacob/resume-studio"
+      }
+    }
+  ]
+}
