@@ -41,10 +41,12 @@ flipping sign conventions. Excel-compatible TVM math is the
 differentiator — `finance_pmt(rate, nper, pv)` returns the same
 correctly-signed answer every time.
 
-- 15 MCP tools across 5 categories
-- Excel-compatible finance: PMT / FV / PV / NPV / IRR / XIRR / NPER / RATE
-- Sample-stat statistics, unit conversion, expression-eval fallback
+- 16 MCP tools across 5 categories
+- Finance: PMT / FV / PV / NPV (scipy + Excel conventions) / IRR / XIRR / NPER / RATE
+- Newton+bisection IRR/XIRR solver with cashflow sign-change validation; analytic-derivative RATE
+- Sample-stat statistics with documented NaN edge cases, unit conversion, expression-eval fallback
 - `list_functions` for browsing the ~250 mathjs functions reachable through `calculate`
+- mathjs sandboxed (import/createUnit disabled)
 - Pre-bundled — no install step on plugin install
 
 > *More coming.* This marketplace is a living portfolio — each new

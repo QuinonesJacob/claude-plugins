@@ -32,7 +32,7 @@
     },
     {
       "name": "math-mcp",
-      "description": "Math + finance MCP server. 15 named tools — Excel-compatible finance (PMT, FV, PV, NPV, IRR, XIRR, NPER, RATE), statistics (summary, percentiles, correlation, linear regression), unit conversion, an arbitrary-expression calculate fallback, and a list_functions discovery tool that browses the underlying mathjs catalog (~250 functions). Custom TVM math means Claude calls finance_pmt with named arguments instead of writing Python and flipping sign conventions. Ships pre-bundled (no install step needed).",
+      "description": "Math + finance MCP server. 16 named tools — Excel-compatible finance (PMT, FV, PV, NPV scipy + Excel conventions, IRR, XIRR, NPER, RATE) with Newton+bisection IRR/XIRR solvers and analytic-derivative RATE; statistics (summary, percentiles, correlation, linear regression with documented NaN edge cases); unit conversion; arbitrary-expression calculate fallback; and a list_functions discovery tool that browses the underlying mathjs catalog (~250 functions). Custom TVM math means Claude calls finance_pmt with named arguments instead of writing Python and flipping sign conventions. mathjs sandboxed to disable import/createUnit extension hooks. Ships pre-bundled (no install step needed).",
       "version": "0.1.0",
       "homepage": "https://github.com/QuinonesJacob/math-mcp",
       "author": {
