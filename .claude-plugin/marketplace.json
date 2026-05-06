@@ -29,6 +29,30 @@
         "source": "github",
         "repo": "QuinonesJacob/resume-studio"
       }
+    },
+    {
+      "name": "math-mcp",
+      "description": "Math + finance MCP server. 14 named tools — Excel-compatible finance (PMT, FV, PV, NPV, IRR, XIRR, NPER, RATE), statistics (summary, percentiles, correlation, linear regression), unit conversion, and a calculate fallback for arbitrary expressions. Custom TVM math means Claude calls finance_pmt with named arguments instead of writing Python and flipping sign conventions. Ships pre-bundled (no install step needed).",
+      "version": "0.1.0",
+      "homepage": "https://github.com/QuinonesJacob/math-mcp",
+      "author": {
+        "name": "Jacob Quinones",
+        "url": "https://github.com/QuinonesJacob"
+      },
+      "category": "productivity",
+      "keywords": [
+        "math",
+        "finance",
+        "mcp",
+        "statistics",
+        "pmt",
+        "irr",
+        "npv"
+      ],
+      "source": {
+        "source": "github",
+        "repo": "QuinonesJacob/math-mcp"
+      }
     }
   ]
 }

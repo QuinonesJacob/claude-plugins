@@ -34,6 +34,18 @@ DOCX with one prompt. Optional Electron viewer ships in the same repo.
 - 15 MCP tools (resume, applications, variants)
 - 4 skills: `parse-resume`, `summarize-jd`, `tailor-resume`, `review-variant`
 
+### [`math-mcp`](https://github.com/QuinonesJacob/math-mcp)
+Math + finance MCP server. Claude picks the right operation from
+**named tools with rich descriptions** instead of writing Python and
+flipping sign conventions. Excel-compatible TVM math is the
+differentiator — `finance_pmt(rate, nper, pv)` returns the same
+correctly-signed answer every time.
+
+- 14 MCP tools across 4 categories
+- Excel-compatible finance: PMT / FV / PV / NPV / IRR / XIRR / NPER / RATE
+- Sample-stat statistics, unit conversion, expression-eval fallback
+- Pre-bundled — no install step on plugin install
+
 > *More coming.* This marketplace is a living portfolio — each new
 > plugin gets an entry here so you only have to add this marketplace
 > once.
