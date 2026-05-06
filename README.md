@@ -62,10 +62,3 @@ inside and you can install them through the standard plugin browser
 marketplace just routes you to them.
 
 Reference: [code.claude.com/docs/en/plugin-marketplaces](https://code.claude.com/docs/en/plugin-marketplaces.md).
-
-## Why a marketplace and not just one repo?
-
-Each plugin has its own scope, README, issues, license. Mashing them
-into one repo would obscure what each one does and break the install
-flow. A marketplace catalogs them; users add one URL and see
-everything.
