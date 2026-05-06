@@ -9,10 +9,22 @@
   "plugins": [
     {
       "name": "resume-studio",
-      "description": "Tailor resumes against JDs, manage applications on a kanban, export to DOCX/PDF — driven through Claude via stdio MCP.",
+      "description": "Local-first job-application workspace. Tailor your master resume against any JD, render the diff inline as an artifact, export to DOCX/PDF, and track applications on a kanban — all through Claude. Ships 4 skills (parse-resume, summarize-jd, tailor-resume, review-variant), 15 MCP tools across resume / applications / variants, and 1 SessionStart bootstrap hook. Optional Electron viewer in the same repo.",
       "version": "0.1.0",
       "homepage": "https://github.com/QuinonesJacob/resume-studio",
-      "keywords": ["resume", "job-application", "mcp", "skills", "kanban"],
+      "author": {
+        "name": "Jacob Quinones",
+        "url": "https://github.com/QuinonesJacob"
+      },
+      "category": "productivity",
+      "keywords": [
+        "resume",
+        "job-application",
+        "mcp",
+        "skills",
+        "kanban",
+        "pandoc"
+      ],
       "source": {
         "source": "github",
         "repo": "QuinonesJacob/resume-studio"
