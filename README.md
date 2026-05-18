@@ -13,6 +13,7 @@ Add this marketplace once. Browse and install any plugin from it.
 ```bash
 claude plugin marketplace add QuinonesJacob/claude-plugins
 claude plugin install resume-studio@quinones-claude-plugins
+claude plugin install team-skills@quinones-claude-plugins
 ```
 
 **Claude Desktop (GUI):** **+** next to the prompt → **Plugins** → **Add plugin** → paste `QuinonesJacob/claude-plugins`.
@@ -48,6 +49,19 @@ correctly-signed answer every time.
 - `list_functions` for browsing the ~250 mathjs functions reachable through `calculate`
 - mathjs sandboxed (import/createUnit disabled)
 - Pre-bundled — no install step on plugin install
+
+### `team-skills`
+Shared team skills for product workflows, bundled in this repo so the
+set can grow without spinning up a repo per skill. Currently ships the
+`plan` skill: it sets up `docs/plans/<slug>-plan/plan.md` and routes to
+the right flow. Greenfield plans **always** run a debate loop — a
+"simplest" proposer and a "most robust" proposer in parallel, refereed
+by a critique-only debater that never picks a winner (the user does).
+Improvements ask whether to debate or single-shot first, and
+auto-archive any superseded plan.
+
+- 1 skill: `plan` (greenfield debate loop + improvement/revision flow)
+- Bundled local source — installs straight from this marketplace, no extra repo
 
 > *More coming.* This marketplace is a living portfolio — each new
 > plugin gets an entry here so you only have to add this marketplace

@@ -53,6 +53,24 @@
         "source": "github",
         "repo": "QuinonesJacob/math-mcp"
       }
+    },
+    {
+      "name": "team-skills",
+      "description": "Shared team skills for product workflows. Ships the `plan` skill: bootstrap and maintain product plans under docs/plans/<slug>-plan/plan.md. Greenfield plans ALWAYS run a mandatory debate loop between two proposer agents (simplest vs. most robust) refereed by a critique-only debater that never picks a winner — only the user does. Improvements ask first whether to debate or single-shot, and auto-archive superseded plans with a timestamped plan-archive/ pattern. Bundled in this repo (local source) so the set can grow without separate repos.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jacob Quinones",
+        "url": "https://github.com/QuinonesJacob"
+      },
+      "category": "productivity",
+      "keywords": [
+        "planning",
+        "skills",
+        "product",
+        "debate",
+        "team"
+      ],
+      "source": "./plugins/team-skills"
     }
   ]
 }
