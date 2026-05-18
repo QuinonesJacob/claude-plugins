@@ -1,7 +1,7 @@
 {
   "name": "team-skills",
   "version": "0.1.0",
-  "description": "Shared team skills for product workflows. Ships the `plan` skill: bootstrap and maintain product plans under docs/plans/, with a mandatory simplest-vs-robust debate loop for greenfield and an opt-in debate for improvements.",
+  "description": "Shared team skills for product workflows. Ships `plan` (bootstrap and maintain product plans under docs/plans/ with a mandatory simplest-vs-robust debate loop for greenfield and an opt-in debate for improvements) and `user-voice` (learn the user's writing voice from samples plus a short interview, then install it as a portable my-voice skill and/or a CLAUDE.md section so future sessions draft email/Slack/PR messages in their voice instead of sounding like AI).",
   "author": {
     "name": "Jacob Quinones",
     "url": "https://github.com/QuinonesJacob"
