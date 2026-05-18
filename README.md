@@ -52,15 +52,27 @@ correctly-signed answer every time.
 
 ### `team-skills`
 Shared team skills for product workflows, bundled in this repo so the
-set can grow without spinning up a repo per skill. Currently ships the
-`plan` skill: it sets up `docs/plans/<slug>-plan/plan.md` and routes to
-the right flow. Greenfield plans **always** run a debate loop — a
-"simplest" proposer and a "most robust" proposer in parallel, refereed
-by a critique-only debater that never picks a winner (the user does).
+set can grow without spinning up a repo per skill.
+
+**`plan`** — sets up `docs/plans/<slug>-plan/plan.md` and routes to the
+right flow. Greenfield plans **always** run a debate loop: a "simplest"
+proposer and a "most robust" proposer in parallel, refereed by a
+critique-only debater that never picks a winner (the user does).
 Improvements ask whether to debate or single-shot first, and
 auto-archive any superseded plan.
 
-- 1 skill: `plan` (greenfield debate loop + improvement/revision flow)
+**`user-voice`** — one-time setup skill that makes Claude stop sounding
+like AI. It learns your writing voice from a few real samples plus a
+short interview, builds a structured Voice Profile (punctuation rules,
+per-channel formality, banned AI-tell phrases, how much context to
+assume), then installs it as a portable `my-voice` skill and/or a
+sentinel-delimited `CLAUDE.md` section. Future sessions then draft
+email, Slack, Teams, iMessage, and PR comments in your voice. No em
+dashes, no "I hope this email finds you well," concise, channel-aware.
+Re-invoke it to refine.
+
+- 2 skills: `plan` (greenfield debate loop + improvement/revision flow),
+  `user-voice` (voice capture → installs a my-voice skill / CLAUDE.md section)
 - Bundled local source — installs straight from this marketplace, no extra repo
 
 > *More coming.* This marketplace is a living portfolio — each new
